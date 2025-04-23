@@ -1,0 +1,10 @@
+[project]
+name = "decentralized-ticketing"
+authors = ["Your Name"]
+description = "A decentralized customer support ticketing system built on Stacks blockchain"
+telemetry = false
+requirements = []
+
+[contracts.ticket-system]
+path = "contracts/ticket-system.clar"
+depends_on = []
