@@ -1,6 +1,6 @@
 [project]
 name = "decentralized-ticketing"
-authors = ["Your Name"]
+authors = ["Hammed"]
 description = "A decentralized customer support ticketing system built on Stacks blockchain"
 telemetry = false
 requirements = []
@@ -8,3 +8,11 @@ requirements = []
 [contracts.ticket-system]
 path = "contracts/ticket-system.clar"
 depends_on = []
+
+[contracts.ticket-metadata]
+path = "contracts/ticket-metadata.clar"
+depends_on = ["ticket-system"]
+
+[contracts.ticket-notifications]
+path = "contracts/ticket-notifications.clar"
+depends_on = ["ticket-system"]
